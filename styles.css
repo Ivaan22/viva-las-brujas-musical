@@ -7,3 +7,18 @@
 @keyframes heroDrift{from{transform:scale(1.035) translate3d(0,0,0)}to{transform:scale(1.085) translate3d(-.7%,-.35%,0)}}@keyframes auroraPulse{from{transform:translate3d(-1%,0,0) scale(.98);opacity:.55}to{transform:translate3d(2%,1%,0) scale(1.04);opacity:.92}}@keyframes heroReveal{from{opacity:0;transform:translateY(24px);filter:blur(5px)}to{opacity:1;transform:none;filter:none}}@keyframes navReveal{from{opacity:0;transform:translate(-50%,-12px)}to{opacity:1;transform:translate(-50%,0)}}@keyframes scanLine{0%,15%{transform:translateX(-100%)}70%,100%{transform:translateX(100%)}}
 @media(max-width:760px){.hero>.hero-cast{object-position:54% center;filter:saturate(1.04) contrast(1.04)}.hero-vignette{background:linear-gradient(90deg,rgba(5,4,8,.92),rgba(5,4,8,.56)),linear-gradient(0deg,rgba(5,4,8,.8),rgba(5,4,8,.12) 70%)}.hero-aurora{inset:-8%;opacity:.55}.hero-cursor-glow,.hero-scroll-cue{display:none}.hero::after{opacity:.2}}
 @media(prefers-reduced-motion:reduce){.hero>.hero-cast,.hero-aurora,.hero-scroll-cue span::after,.is-ready .hero-content>*,.is-ready .nav-shell{animation:none!important}.hero-cursor-glow{display:none}.hero-content>*{opacity:1;transform:none;filter:none}}
+
+/* Tarjetas fotográficas de experiencia */
+.benefit-grid{gap:16px;background:transparent}
+.benefit-grid .benefit-card{display:flex;min-width:0;min-height:0;padding:0;overflow:hidden;flex-direction:column;border:1px solid #ffffff1f;background:#1b1424;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+.benefit-media{position:relative;overflow:hidden;flex:none;width:100%;aspect-ratio:4/3;background:#0e0a13}
+.benefit-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,#17111f9c);pointer-events:none}
+.benefit-media img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.01);transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .35s ease}
+.benefit-card:nth-child(3) .benefit-media img{object-position:center 25%}
+.benefit-content{display:flex;flex:1;flex-direction:column;padding:28px 30px 32px}
+.benefit-content>span{color:#b98ae8;font-size:11px;letter-spacing:.12em}
+.benefit-grid .benefit-content h3{margin:28px 0 12px}
+.benefit-grid .benefit-content p{margin:auto 0 0}
+@media(hover:hover){.benefit-card:hover{transform:translateY(-7px);border-color:#b98ae85c;box-shadow:0 22px 55px #05020859}.benefit-card:hover .benefit-media img{transform:scale(1.075);filter:saturate(1.08)}}
+@media(max-width:760px){.benefit-grid{gap:18px}.benefit-grid .benefit-card{min-height:0}.benefit-media{aspect-ratio:16/10}.benefit-card:nth-child(3) .benefit-media img{object-position:center 22%}.benefit-content{padding:24px 24px 27px}.benefit-grid .benefit-content h3{margin:22px 0 10px}}
+@media(prefers-reduced-motion:reduce){.benefit-card,.benefit-media img{transition:none!important}}
