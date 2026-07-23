@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="ring" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c18af0"/>
+      <stop offset="1" stop-color="#6a31a7"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="#17111f"/>
+  <rect x="3" y="3" width="58" height="58" rx="12" fill="none" stroke="url(#ring)" stroke-width="2"/>
+  <text x="8" y="47" fill="#fff" font-family="Georgia, 'Times New Roman', serif" font-size="43" font-weight="700">B</text>
+  <text x="36" y="29" fill="#b77ae7" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-style="italic" font-weight="700">V</text>
+  <path d="m49 11 1.7 4.3L55 17l-4.3 1.7L49 23l-1.7-4.3L43 17l4.3-1.7L49 11Z" fill="#fff"/>
+</svg>
