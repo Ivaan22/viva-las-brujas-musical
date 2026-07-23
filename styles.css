@@ -30,7 +30,15 @@
 .closing-cta h2{max-width:690px;margin:0 0 40px;text-wrap:balance}
 .closing-cta .button{margin:0}
 
-@media(max-width:760px){.closing-cta{align-items:flex-end;min-height:700px;padding:90px 0 70px;text-align:center}.closing-photo{object-position:58% center}.closing-cta::before{background:linear-gradient(0deg,rgba(7,5,10,.96) 0%,rgba(7,5,10,.88) 34%,rgba(7,5,10,.38) 68%,rgba(7,5,10,.18) 100%),linear-gradient(90deg,rgba(7,5,10,.35),transparent 48%,rgba(7,5,10,.2))}.closing-cta h2{font-size:46px}.closing-cta .button{margin:auto}}
+@media(max-width:760px){
+  .closing-cta{align-items:flex-end;min-height:700px;padding:82px 0 112px;text-align:center}
+  .closing-photo{object-position:52% center}
+  .closing-cta::before{background:linear-gradient(0deg,rgba(7,5,10,.96) 0%,rgba(7,5,10,.88) 34%,rgba(7,5,10,.38) 68%,rgba(7,5,10,.18) 100%),linear-gradient(90deg,rgba(7,5,10,.35),transparent 48%,rgba(7,5,10,.2))}
+  .closing-content{display:flex;width:min(100% - 40px,420px);margin-inline:auto;align-items:center;flex-direction:column;transform:translateY(-14px)}
+  .closing-content>p{width:100%;text-align:center}
+  .closing-cta h2{width:100%;max-width:360px;margin:0 auto 34px;font-size:clamp(44px,12.3vw,52px);line-height:.98}
+  .closing-cta .button{width:min(100%,330px);margin:0 auto}
+}
 
 /* Hero móvil dividido: imagen completa arriba, contenido legible debajo */
 @media(max-width:760px){
